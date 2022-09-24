@@ -14,11 +14,15 @@
 html {
   width: 100%;
   height: 100%;
+  font-size: 16px;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
+  height: 100%;
   padding: 0;
   background-color: #fff;
+  min-width: 375px;
+  max-width: 1200px;
   font-family: "Noto Sans TC", sans-serif; /* 設定字型 */
   font-size: 1rem;
   line-height: 1.4;
@@ -51,6 +55,7 @@ li {
 a,
 a:hover,
 a:focus {
+  color: black;
   text-decoration: none;
 }
 img {
@@ -74,14 +79,32 @@ button {
 button[disabled] {
   pointer-events: none;
 }
-input {
-  padding: 0;
+
+
+input:hover,
+input:active,
+select:hover,
+select:active {
+  opacity: 1;
+  border-color: black;
 }
+
+
 input:required {
   box-shadow: none;
 }
 input:invalid {
   box-shadow: none;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin: 2rem 0 2rem 0;
 }
 </style>
 

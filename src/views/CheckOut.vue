@@ -1,21 +1,39 @@
 <template>
 <main class="my-8 mx-6">
-  <div class="main-title my-8">結帳</div>
+  <div class="main-title">結帳</div>
     <div class="main-container">
       <div class="left-content top-content">
        <Stepper />
-       <Form />
-       <Cart />
+       <Form />  
+       <Button />  
       </div>
+      <Cart />
     </div> 
-      <Button />
+      
 </main>
 
 </template>
 
 
 <style scoped>
+main {
+  padding: 1rem;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
 
+}
+.main-title {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin: 2rem 0 2rem 0;
+}
+.left-content {
+    width: 50%;
+  }
 </style>
 
 <script>

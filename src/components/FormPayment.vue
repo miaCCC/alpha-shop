@@ -1,5 +1,5 @@
 <template>
-  <section class="part part-3 d-none">
+  <section class="part part-3">
     <div class="main-title my-8">付款資訊</div>
     <div class="grid-part">
       <div class="form-row">
@@ -26,3 +26,38 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+input, 
+select {
+  padding: 0;
+  width: 100%;
+  border: 1px solid #4a4a4a;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 1em;
+  opacity: 0.5;
+  }
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #808080;
+}
+.grid-part {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.5rem 2rem;
+  margin: 5px;
+}
+.form-row {
+    grid-column: 1 / 7;
+  }
+.validity-period {
+    grid-column: 1 / 4;
+  }
+  .cvc {
+    grid-column: 4 / 7;
+  }
+</style>

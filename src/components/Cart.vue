@@ -3,13 +3,13 @@
     <h3 class="my-2">購物籃</h3>
     <div class="cart-container">
       <div class="cart-panel"></div>
-      <div class="product-panel product-1 d-flex justify-content-between">
+      <div class="product-panel product-1 d-flex">
         <img
           src="https://i.postimg.cc/BZ5YL2Bf/Block-2px.png"
           alt=""
           class="product-img"
         />
-        <div class="product-list product-1 align-items-end">
+        <div class="product-list product-1 ">
           <div class="mb-2">
             <span class="product-name">破壞補釘修身牛仔褲</span>
           </div>
@@ -27,7 +27,7 @@
           </div>
         </div>
       </div>
-      <div class="product-panel product-2 d-flex justify-content-between">
+      <div class="product-panel product-2 d-flex ">
         <img
           src="https://i.postimg.cc/dQz8NvZJ/Block-2x.png"
           alt=""
@@ -66,3 +66,53 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+
+.right-content {
+  width: 40%;
+  padding: 1.5rem;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+
+}
+.product-panel {
+  margin: 3rem 0 3rem 0;
+  position: relative;
+
+}
+
+span {
+  font-size: 14px;
+  margin: 0 0 1rem 1rem;
+}
+  
+.price {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+}
+.product-price {
+  position: absolute;
+  right: 0;
+  top: 0
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+
+i {
+  color: lightgray;
+  font-size: 16px;
+}
+  
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: lightgrey;
+}
+
+</style>

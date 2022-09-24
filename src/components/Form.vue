@@ -2,8 +2,8 @@
       <div class="form-panel left-panel mb-8">
         <div class="form-container">
           <Form-address />
-          <FormShipment />
-          <FormPayment />
+          <FormShipment v-if="false"/>
+          <FormPayment v-if="false"/>
           
         </div>
       </div>
@@ -25,3 +25,4 @@ export default {
   }
 
   </script>
+ 
