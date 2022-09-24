@@ -1,42 +1,28 @@
 <template>
-
-  <div class="container mt-5">
-    <h3 class="main_title mb-5 mx-3">結帳</h3>
-    <main>
-    <section class="customer_info">
-    
-      <Stepper />
-      <Form />
+<main class="my-8 mx-6">
+  <div class="main-title my-8">結帳</div>
+    <div class="main-container">
+      <div class="left-content top-content">
+       <Stepper />
+       <Form />
+       <Cart />
+      </div>
+    </div> 
       <Button />
-    
-    </section>
-
-    <section class="cart">
-      <Cart />
-
-    </section>
-    </main>
-  </div>
+</main>
 
 </template>
 
 
 <style scoped>
-main {
-  display: flex;
-  justify-content: space-between;
-  height: 90%;
-  width: 100%;
-  margin: auto;
-}
+
 </style>
 
 <script>
-import Stepper from '../components/Stepper.vue'
-import Form from '../components/Form.vue'
-import Button from '../components/Button.vue'
-import Cart from '../components/Cart.vue'
-
+import Stepper from "../components/Stepper.vue";
+import Form from "../components/Form.vue";
+import Button from "../components/Button.vue";
+import Cart from "../components/Cart.vue";
 
 export default {
   components: {
@@ -45,6 +31,5 @@ export default {
     Button,
     Cart,
   },
-  }
-
-  </script>
+};
+</script>

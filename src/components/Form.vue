@@ -1,19 +1,14 @@
 <template>
-   <section class="main_form mx-3 mb-8">
-    <div>
-    <FormAddress />
-    </div>
-
-    <div>
-    <FormShipment />
-    </div>
-
-    <div>
-    <FormPayment />
-    </div>
-   </section>
+      <div class="form-panel left-panel mb-8">
+        <div class="form-container">
+          <Form-address />
+          <FormShipment />
+          <FormPayment />
+          
+        </div>
+      </div>
 </template>
-
+ 
 <script>
 import FormAddress from '../components/FormAddress.vue'
 import FormShipment from '../components/FormShipment.vue'

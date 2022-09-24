@@ -1,29 +1,35 @@
 <template>
-  <div class="form_list" id="shipment">
-    <h2 class="form_list_title">運送方式</h2>
-    <div class="form_list_content shipment">
-      <div class="content_row mb-5 py-3 active">
-        <input
-          type="radio"
-          name="shipment"
-          value="normal"
-          data-price="0"
-          checked
-        />
-        <div class="ship_descript">
-          <p>標準運送</p>
-          <p>約 3~7 個工作天</p>
+  <section class="part part-2 d-none">
+    <div class="main-title my-8">運送方式</div>
+
+    <div class="shipment-container">
+      
+      <div class="shipment mt-3 d-flex">
+        <input name="ta-gender" type="radio" value="standard" />
+        <div class="shipment-choice">
+          <div class="d-flex justify-content-between">
+            <label for="">標準運送</label>
+            <div class="price">免費</div>
+          </div>
+          <div class="time">
+            <span>約3~7個工作天</span>
+          </div>
         </div>
-        <p class="ship_price">免費</p>
       </div>
-      <div class="content_row py-3">
-        <input type="radio" name="shipment" value="dhl" data-price="500" />
-        <div class="ship_descript">
-          <p class="highlight">DHL 貨運</p>
-          <p>48小時內送達</p>
+
+      <div class="shipment mt-3 d-flex">
+        <input name="ta-gender" type="radio" value="standard" />
+        <div class="shipment-choice">
+          <div class="d-flex justify-content-between">
+            <label for="">DHL貨運</label>
+            <div class="price">500</div>
+          </div>
+          <div class="time">
+            <span>約3~7個工作天</span>
+          </div>
         </div>
-        <p class="ship_price">$500</p>
       </div>
+    
     </div>
-  </div>
+  </section>
 </template>

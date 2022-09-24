@@ -5,14 +5,27 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+
+
 /* reset css */
-body {
-  margin: 0;
-  padding: 0;
+/* reset css */
+
+html {
   width: 100%;
   height: 100%;
 }
-* {
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "Noto Sans TC", sans-serif; /* 設定字型 */
+  font-size: 1rem;
+  line-height: 1.4;
+}
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 h1,
@@ -28,6 +41,9 @@ p {
 ul,
 ol,
 li {
+  list-style-type: none; /* 拿掉前方圈圈 */
+  margin: 0;
+  padding: 0;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -38,8 +54,6 @@ a:focus {
   text-decoration: none;
 }
 img {
-  width: 100%;
-  height: 100%;
   display: block;
 }
 .btn,

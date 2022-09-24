@@ -1,18 +1,21 @@
-<template>  
-    <section class="step_panel d-flex mx-3 mb-6">
-      <div class="step_panel_item active">
-        <div class="step_circle"></div>
-        <span class="step_title">寄送地址</span>
-        <div class="step_line"></div>
+<template>
+  <div id="step-control" class="stepper-panel">
+    <div class="container stepper-container">
+      <div class="step active">
+        <div class="circle-container"></div>
+        <p class="step-title d-none">寄送地址</p>
       </div>
-      <div class="step_panel_item ">
-        <div class="step_circle"></div>
-        <span class="step_title">運送方式</span>
-        <div class="step_line"></div>
+
+      <div class="step">
+        <div class="circle-container"></div>
+        <span class="connect-line"></span>
+        <p class="step-title d-none">運送方式</p>
       </div>
-      <div class="step_panel_item ">
-        <div class="step_circle"></div>
-        <span class="step_title">付款資訊</span>
+      <div class="step">
+        <div class="circle-container"></div>
+        <span class="connect-line"></span>
+        <p class="step-title d-none">付款資訊</p>
       </div>
-    </section>
+    </div>
+  </div>
 </template>
