@@ -1,9 +1,10 @@
 <template>
       <div class="form-panel left-panel mb-8">
         <div class="form-container">
-          <Form-address v-if="false"/>
-          <FormShipment v-if="false"/>
-          <FormPayment />
+          <Form-address 
+           v-if="step === 1"/>
+          <FormShipment v-if="step === 2"/>
+          <FormPayment v-if="step === 3"/>
           
         </div>
       </div>
@@ -21,6 +22,14 @@ export default {
     FormAddress,
     FormShipment,
     FormPayment,
+  },
+   props: {
+    step: {
+      type: Number,
+      required: true
+    },
+
+
   },
   }
 

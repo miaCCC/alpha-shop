@@ -115,6 +115,12 @@ export default {
         city: '',
       },
     }
+  },
+
+
+
+  created() {
+    this.getUserInfo()
   }
 }
 </script>
