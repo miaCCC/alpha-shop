@@ -9,8 +9,6 @@
 
 
 /* reset css */
-/* reset css */
-
 html {
   width: 100%;
   height: 100%;
