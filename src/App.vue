@@ -19,7 +19,7 @@ body {
   height: 100%;
   padding: 0;
   background-color: #fff;
-  min-width: 375px;
+  min-width: 960px;
   max-width: 1200px;
   font-family: "Noto Sans TC", sans-serif; /* 設定字型 */
   font-size: 1rem;

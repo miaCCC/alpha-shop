@@ -56,7 +56,7 @@
 <style scoped>
 header {
   position: relative;
-  height: 90px;
+  height: 80px;
   text-align: center;
   /* 陰影 */
   -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
@@ -69,14 +69,15 @@ header {
     display: grid;
     grid-template-columns: 1fr auto minmax(100px, 1fr);
     align-items: center;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
  .nav-list {
     all: unset;
-    padding-left: 20px;
     display: grid;
     grid-auto-flow: column;
-    grid-gap: 0.5rem;
+  }
+  .nav-link {
+    padding: 0;
   }
   .navbar-icons {
     position: absolute;
@@ -91,7 +92,5 @@ header {
 .icon {
   padding: 0.5rem;
 }
-.nav-item {
-  margin: 1rem 0;
-}
+
 </style>
