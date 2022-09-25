@@ -38,12 +38,12 @@
     </div>
 
     <div class="line"></div>
-    <div class="fee d-flex justify-content-between py-3">
+    <div class="fee d-flex justify-content-between py-4">
       <div>運費</div>
-      <div class="shipment-fee bold">免費</div>
+      <div class="shipment-fee bold">{{shippingFee === 500 ? shippingFee : '免費'}}</div>
     </div>
     <div class="line"></div>
-    <div class="fee d-flex justify-content-between py-3">
+    <div class="fee d-flex justify-content-between py-4">
       <div>小計</div>
       <div>
         <p>$<span class="total">{{totalPrice.toLocaleString("en-US")}}</span></p>
@@ -103,6 +103,8 @@ i {
 </style>
 
 <script>
+import { eventBus } from '../main';
+
 const dummyData = {
   products: [
     {
@@ -126,6 +128,7 @@ export default {
   data() {
     return {
       products: [],
+      shippingFee: ""
     }
   },
 
@@ -156,13 +159,17 @@ export default {
       this.products.forEach(product => {
         total += product.price * product.quantity
       })
-       return total
+       return total + Number(this.shippingFee)
     }
 
   },
 
   created() {
-    this.fetchProducts()
+    this.fetchProducts(),
+    eventBus.$on('after-shipmentChoice', (fee) => {
+            console.log(fee);
+            this.shippingFee = fee; // 將傳來的age存進userAge內
+        });
   }
 
 

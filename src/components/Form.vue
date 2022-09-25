@@ -3,13 +3,21 @@
         <div class="form-container">
           <Form-address 
            v-if="step === 1"/>
-          <FormShipment v-if="step === 2"/>
+          <FormShipment 
+           v-if="step === 2"/>
           <FormPayment v-if="step === 3"/>
           
         </div>
       </div>
 </template>
  
+<style scoped>
+
+ .form-container {
+  height: 450px
+}
+</style>
+
 <script>
 import FormAddress from '../components/FormAddress.vue'
 import FormShipment from '../components/FormShipment.vue'
@@ -28,9 +36,8 @@ export default {
       type: Number,
       required: true
     },
-
-
   },
+  
   }
 
   </script>
