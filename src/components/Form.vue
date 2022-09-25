@@ -1,9 +1,9 @@
 <template>
       <div class="form-panel left-panel mb-8">
         <div class="form-container">
-          <Form-address />
+          <Form-address v-if="false"/>
           <FormShipment v-if="false"/>
-          <FormPayment v-if="false"/>
+          <FormPayment />
           
         </div>
       </div>

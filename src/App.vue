@@ -78,6 +78,7 @@ button {
 }
 button[disabled] {
   pointer-events: none;
+  color: lightgrey;
 }
 
 

@@ -1,17 +1,20 @@
 <template>
   <div id="step-control" class="stepper-panel">
     <div class="stepper-container">
-      <div class="step active">
+      <div class="step active" 
+        :class="{ checked: step > 1 }">
         <div class="circle-container one"></div>
         <p class="step-title">寄送地址</p>
       </div>
 
-      <div class="step">
+      <div class="step"
+       :class="{ active: step === 2, checked: step > 2 }">
         <div class="circle-container two"></div>
         <span class="connect-line"></span>
         <p class="step-title">運送方式</p>
       </div>
-      <div class="step">
+      <div class="step"
+       :class="{ active: step === 3 }">
         <div class="circle-container three"></div>
         <span class="connect-line"></span>
         <p class="step-title">付款資訊</p>
@@ -49,13 +52,6 @@
     border: 2px solid lightgray;
 }
 
-.circle-container {
-  background-color: #2a2a2a;
-  color: #ffffff;
-  border: 2px solid #2a2a2a;
-}
-
-
 .connect-line {
   position: absolute;
   top: 18px;
@@ -79,13 +75,22 @@
 }
 .checked .circle-container,
 .active .circle-container {
-  color: white;
-  background: black;
-}
-
-.checked .label-container,
-.active .label-container {
-  color: black;
-}
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 2px solid #2a2a2a;
+    }
 
 </style>
+
+<script>
+
+export default {
+  props: {
+    step: {
+      type: Number,
+      required: true
+    }
+  },
+
+}
+</script>
